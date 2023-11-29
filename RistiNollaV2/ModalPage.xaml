@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RistiNollaV2.ModalPage"
+             Title="ModalPage"
+             BackgroundImageSource="ristinollauujee.png">
+    <VerticalStackLayout>
+        <Picker x:Name="picker" Title="Valitse käyttäjä" ItemsSource="{Binding IhmisLista}" ItemDisplayBinding="{Binding Nimi}"
+        VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="300"/>
+        <Button x:Name="vvButton" Text="Hyväksy" Margin="20" WidthRequest="200" Clicked="ViimeisteleValinta"/>
+        
+    </VerticalStackLayout>
+</ContentPage>

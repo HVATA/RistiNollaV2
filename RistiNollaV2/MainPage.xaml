@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RistiNollaV2.MainPage"
+             BackgroundImageSource="ristinollauujee.png">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Button x:Name="toPlay" Text="Pelaa"  Clicked="ToGamePage" WidthRequest="150" HeightRequest="20"
+            Margin="50"/>
+            <Button x:Name="toStats" Text="Tilastot" Clicked="ToStatsPage" WidthRequest="150" HeightRequest="20"
+            Margin="50"/>
+            <Button x:Name="toRules" Text="Säännöt" Clicked="PopUpSaannot" WidthRequest="150" HeightRequest="20"
+            Margin="50"/>
+            <Button x:Name="exit" Text="Sulje" Clicked="shutDown" WidthRequest="150" HeightRequest="20"
+            Margin="50"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

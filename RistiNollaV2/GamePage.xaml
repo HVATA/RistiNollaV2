@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RistiNollaV2.GamePage"
+             Title="GamePage"
+             BackgroundImageSource="ristinollauujee.png">
+    <Grid x:Name="grid">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        
+        <Button x:Name="back" Text="Takaisin menuun" Grid.Row="0" Grid.Column="0" Clicked="ToMenu"/>
+        
+        <Label x:Name="Pelaaja1" Text="Pelaaja 1" Grid.Row="1" VerticalOptions="Start" Grid.Column="4"/>
+        <Entry x:Name="EntryPelaaja1" Text="" Grid.Row="1" VerticalOptions="Start" Grid.Column="6" HeightRequest="50"/>
+        
+        <Label x:Name="Pelaaja2" Text="Pelaaja 2" Grid.Row="1" VerticalOptions="Center" Grid.Column="4"/>
+        <Entry x:Name="EntryPelaaja2" Text="" Grid.Row="1" VerticalOptions="Center" Grid.Column="6" HeightRequest="50"/>
+
+
+        <ImageButton x:Name="one" 
+                     Padding="10,10,10,10" Clicked="oneBtnClicked" 
+                     Source="eimitaan.png" Grid.Row="1" Grid.Column="1" 
+                     HorizontalOptions="Fill" VerticalOptions="Fill"/>
+
+        <ImageButton x:Name="two" 
+                     Padding="10,10,10,10" Clicked="twoBtnClicked" 
+                     Source="eimitaan.png" Grid.Row="1" Grid.Column="2" 
+                     HorizontalOptions="Fill" VerticalOptions="Fill"/>
+
+        <ImageButton x:Name="thr"
+                     Padding="10,10,10,10" Clicked="thrBtnClicked" 
+                     Source="eimitaan.png" Grid.Row="1" Grid.Column="3" 
+                     HorizontalOptions="Fill" VerticalOptions="Fill"/>
+
+        <ImageButton x:Name="fou" 
+                     Padding="10,10,10,10" Clicked="fouBtnClicked" 
+                     Source="eimitaan.png" Grid.Row="2" Grid.Column="1" 
+                     HorizontalOptions="Fill" VerticalOptions="Fill"/>
+        <ImageButton x:Name="fiv" 
+                     Padding="10,10,10,10" Clicked="fivBtnClicked" 
+                     Source="eimitaan.png" Grid.Row="2" Grid.Column="2" 
+                     HorizontalOptions="Fill" VerticalOptions="Fill"/>
+        <ImageButton x:Name="six" 
+                     Padding="10,10,10,10" Clicked="sixBtnClicked" 
+                     Source="eimitaan.png" Grid.Row="2" Grid.Column="3" 
+                     HorizontalOptions="Fill" VerticalOptions="Fill"/>
+        <ImageButton x:Name="sev" 
+                     Padding="10,10,10,10" Clicked="sevBtnClicked" 
+                     Source="eimitaan.png" Grid.Row="3" Grid.Column="1" 
+                     HorizontalOptions="Fill" VerticalOptions="Fill"/>
+        <ImageButton x:Name="eig" 
+                     Padding="10,10,10,10" Clicked="eigBtnClicked" 
+                     Source="eimitaan.png" Grid.Row="3" Grid.Column="2" 
+                     HorizontalOptions="Fill" VerticalOptions="Fill"/>
+        <ImageButton x:Name="nin" 
+                     Padding="10,10,10,10" Clicked="ninBtnClicked" 
+                     Source="eimitaan.png" Grid.Row="3" Grid.Column="3" 
+                     HorizontalOptions="Fill" VerticalOptions="Fill"/>
+    </Grid>
+</ContentPage>
